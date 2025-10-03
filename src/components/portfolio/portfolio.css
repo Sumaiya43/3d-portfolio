@@ -1,7 +1,6 @@
 .portfolio {
   height: 400vh;
   position: relative;
-  isolation: isolate; 
 }
 
 .pList {
