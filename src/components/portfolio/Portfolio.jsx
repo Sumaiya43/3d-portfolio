@@ -59,7 +59,7 @@ const items = [
     img: "/p2.png",
     title: "3D Portfolio",
     desc: "An interactive portfolio website built with React Three Fiber and Framer Motion. Showcases 3D models, animations, and projects in an engaging way, offering visitors an immersive experience.",
-    link: "/",
+    link: "https://3d-portfolio-maz.netlify.app/",
   },
   // {
   //   id: 4,
@@ -139,9 +139,9 @@ const Portfolio = () => {
           <ListItem item={item} key={item.id} />
         ))}
       </motion.div>
-      <section />
-      <section />
-      <section />
+      <div className="section"></div>
+      <div className="section"></div>
+      <div className="section"></div>
       <div className="pProggress">
         <svg width="100%" height="100%" viewBox="0 0 160 160">
           <circle

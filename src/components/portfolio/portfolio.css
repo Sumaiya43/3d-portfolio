@@ -3,6 +3,11 @@
   position: relative;
 }
 
+.section {
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
 .pList {
   position: sticky;
   top: 0;
@@ -105,4 +110,45 @@
     width: 50px;
     height: 50px;
   }
+
+  .pList {
+    flex-direction: column;
+    gap: 50px;
+    position: static !important;
+    top: auto !important;
+    height: auto !important;
+    width: 100% !important;
+    flex-direction: column !important;
+    transform: none !important;
+  }
+
+  .pItem {
+    height: auto; /* allow items to size by content */
+  }
+
+  .section {
+    display: none !important; /* <— key line */
+    height: 0 !important;
+    scroll-snap-align: none !important;
+  }
+
+  .portfolio {
+    height: auto !important; /* shrink to fit children */
+    position: static !important; /* no relative container */
+  }
+
+  .pList .empty {
+    display: none !important; /* hide spacer div */
+    width: 0 !important;
+    height: 0 !important;
+  }
+  .pItem:nth-child(1) {
+  background: none !important;
+}
+.pItem:nth-child(2) {
+  background: none;
+}
+.pItem:nth-child(3) {
+  background: none;
+}
 }

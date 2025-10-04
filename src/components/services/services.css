@@ -94,6 +94,7 @@
 /* RESPONSIVE */
 
 @media (max-width: 1536px) {
+  
   .service .counterList {
     width: 70%;
   }
